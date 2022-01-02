@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fitness</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+
+   <header>
+      <div class="container">
+         <div class="header">
+            <div class="header-menu">
+               <a href="#" class="header-logo"></a>
+               <nav>
+                  <ul class="header-nav">
+                     <li><a href="#">Мероприятия</a></li>
+                     <li><a href="#">Расписание</a></li>
+                     <li><a href="#">О компании</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="header-social">
+               <a href="#" class="header-insta"></a>
+               <a href="#" class="header-fb"></a>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <section class="banner">
+      <div class="container">
+         <div class="banner-container">
+            <div class="banner-wrapper">
+               <h1 class="banner-title">онлайн тренировки любой сложности</h1>
+               <p class="banner-training">> 15 тренировок</p>
+               <div class="banner-box">
+                  <p class="banner-text">в области спортивной физиологии и нутрициологии
+                  </p>
+                  <a href="#" class="btn">Узнать подробнее</a>
+
+               </div>
+               <a href="#" class="banner-arrow"></a>
+            </div>
+            <div class="banner-img">
+               <img src="img/banner.png" alt="">
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+   <section class="events">
+      <div class="container">
+         <h2 class="events-title">Ближайшие события</h2>
+         <div class="events-grid">
+            <div class="events-grid-item">
+               <div class="events-grid-cover">
+                  <img src="img/maraphon.png" alt="Марафон выносливости">
+               </div>
+               <div class="events-grid-overlay"></div>
+               <h3 class="events-grid-title">
+                  <span>29.06 - 4.07</span>
+                  Марафон выносливости
+               </h3>
+               <p class="events-grid-text">марафон</p>
+               <button class="events-grid-btn" onclick="openModal()">Участвовать</button>
+            </div>
+            <div class="events-grid-item">
+               <div class="events-grid-cover">
+                  <img src="img/Vebinar1.png" alt="Как стать тренером?">
+               </div>
+               <div class="events-grid-overlay"></div>
+               <h3 class="events-grid-title">
+                  <span>9.07</span>
+                  Как стать<br>тренером?
+               </h3>
+               <p class="events-grid-text">вебинар</p>
+               <button class="events-grid-btn" onclick="openModal()">Участвовать</button>
+            </div>
+            <div class="events-grid-item">
+               <div class="events-grid-cover">
+                  <img src="img/Vebinar2.png" alt="Йога, как стиль жизни">
+               </div>
+               <div class="events-grid-overlay"></div>
+               <h3 class="events-grid-title">
+                  <span>15.07</span>
+                  Йога, как стиль жизни
+               </h3>
+               <p class="events-grid-text">вебинар</p>
+               <button class="events-grid-btn" onclick="openModal()">Участвовать</button>
+            </div>
+         </div>
+         <!-- Форма - Зявка а участие -->
+         <div class="blackout">
+            <div id="popupWindow" class="popup-window">
+               <div class="popup-window-wrapper">
+                  <button class="popup-window-close" onclick="closeModal()"></button>
+                  <div class="popup-window-box">
+                     <h3 class="popup-window-title">Заявка на участие «Марафон&nbsp;выносливости»</h3>
+                     <p class="popup-window-text">
+                        Заполните все поля, и мы пришлем информацию&nbsp;в ближайшее время
+                     </p>
+                  </div>
+                  <form action="#" class="popup-form">
+                     <input type="email" placeholder="Ваш e-mail" required autocomplete="on" class="popup-input">
+                     <input type="tel" placeholder="Ваш номер телефона" required autocomplete="on" class="popup-input">
+                     <button class="btn popup-btn" type="submit">Отправить</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="timetable">
+      <div class="container">
+         <div class="timetable-wrapper">
+            <h2 class="timetable-title">Расписание тренировок</h2>
+            <div class="timetable-date">22 - 28 июня</div>
+         </div>
+         <div class="timetable-grid">
+            <div class="timetable-grid-item">
+
+            </div>
+         </div>
+
+      </div>
+
+      <script src="js/main.js"></script>
+   </section>
+
+
+</body>
+
+</html>
