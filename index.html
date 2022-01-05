@@ -99,20 +99,22 @@
                <button class="events-grid-btn" onclick="openModal()">Участвовать</button>
             </div>
          </div>
-         <!-- Форма - Зявка а участие -->
+         <!-- Форма - Зявка на участие -->
          <div class="blackout">
             <div id="popupWindow" class="popup-window">
                <div class="popup-window-wrapper">
                   <button class="popup-window-close" onclick="closeModal()"></button>
                   <div class="popup-window-box">
-                     <h3 class="popup-window-title">Заявка на участие «Марафон&nbsp;выносливости»</h3>
+                     <h3 class="popup-window-title title-before">Заявка на участие «Марафон&nbsp;выносливости»</h3>
                      <p class="popup-window-text">
                         Заполните все поля, и мы пришлем информацию&nbsp;в ближайшее время
                      </p>
                   </div>
                   <form action="#" class="popup-form">
-                     <input type="email" placeholder="Ваш e-mail" required autocomplete="on" class="popup-input">
-                     <input type="tel" placeholder="Ваш номер телефона" required autocomplete="on" class="popup-input">
+                     <input type="email" placeholder="Ваш e-mail" required autocomplete="on"
+                        class="popup-input input-placeholder">
+                     <input type="tel" placeholder="Ваш номер телефона" required autocomplete="on"
+                        class="popup-input input-placeholder">
                      <button class="btn popup-btn" type="submit">Отправить</button>
                   </form>
                </div>
@@ -127,19 +129,97 @@
             <h2 class="timetable-title">Расписание тренировок</h2>
             <div class="timetable-date">22 - 28 июня</div>
          </div>
-         Hello!!!
          <div class="timetable-grid">
-            <div class="timetable-grid-item">
-
+            <div class="timetable-grid-itemLeft">
+               <div class="timetable-grid-item">
+                  <p class="timetable-grid-date">22 июня, 10:00</p>
+                  <div class="timetable-grid-box">
+                     <img src="img/icons/body.svg" alt="Тренинг" class="timetable-grid-img">
+                     <h4 class="timetable-grid-title">Функциональный тренинг</h4>
+                     <p class="timetable-grid-text">
+                        Подготовка тела перед физической нагрузкой.
+                     </p>
+                  </div>
+               </div>
+               <div class="timetable-grid-item training-day">
+                  <p class="timetable-grid-date">23 июня, 10:00</p>
+                  <div class="timetable-grid-box">
+                     <img src="img/icons/jump.svg" alt="Скакалка" class="timetable-grid-img">
+                     <h4 class="timetable-grid-title">Силовой микс</h4>
+                     <p class="timetable-grid-text training-day-text">
+                        Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="timetable-grid-itemCenter">
+               <div class="timetable-grid-item">
+                  <p class="timetable-grid-date">24 июня, 10:00</p>
+                  <div class="timetable-grid-box">
+                     <img src="img/icons/bottle.svg" alt="Бутылка" class="timetable-grid-img">
+                     <h4 class="timetable-grid-title">Body sculpt</h4>
+                     <p class="timetable-grid-text">
+                        Подготовка тела перед физической нагрузкой.
+                     </p>
+                  </div>
+               </div>
+               <div class="timetable-grid-item">
+                  <p class="timetable-grid-date">25 июня, 11:00</p>
+                  <div class="timetable-grid-box">
+                     <img src="img/icons/heart.svg" alt="Сердце" class="timetable-grid-img">
+                     <h4 class="timetable-grid-title">Дыхательные практики</h4>
+                     <p class="timetable-grid-text">
+                        Подготовка тела перед физической нагрузкой.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="timetable-grid-itemRight">
+               <div class="timetable-grid-item">
+                  <p class="timetable-grid-date">26 июня, 11:00</p>
+                  <div class="timetable-grid-box">
+                     <img src="img/icons/dumbbell.svg" alt="Гантеля" class="timetable-grid-img">
+                     <h4 class="timetable-grid-title">L.A.B.</h4>
+                     <p class="timetable-grid-text">
+                        Подготовка тела перед физической нагрузкой.
+                     </p>
+                  </div>
+               </div>
+               <div class="timetable-grid-item">
+                  <p class="timetable-grid-date">27 июня, 10:00</p>
+                  <div class="timetable-grid-box">
+                     <img src="img/icons/weight.svg" alt="Гиря" class="timetable-grid-img">
+                     <h4 class="timetable-grid-title">Комплексная разминка</h4>
+                     <p class="timetable-grid-text">
+                        Подготовка тела перед физической нагрузкой.
+                     </p>
+                  </div>
+               </div>
             </div>
          </div>
-
       </div>
-
-      <script src="js/main.js"></script>
    </section>
 
+   <section class="mailing">
+      <div class="container">
+         <h2 class="mailing-title title-before">Подпишитесь на рассылку</h2>
+         <form action="#" class="mailing-form">
+            <input type="email" placeholder="Ваш e-mail" required autocomplete="on"
+               class="mailing-input input-placeholder">
+            <button class="btn mailing-btn" type="submit">подписаться</button>
+            <div class="mailing-checkbox">
+               <input type="checkbox" id="click" required class="input-checkbox">
+               <label for="click" class="mailing-label">Согласен с обработкой&#160;
+               </label>
+               <div class="mailing-label">
+                  <a href="#" class="mailing-link" target="_blank">персональных данных</a>
+               </div>
+            </div>
+         </form>
+      </div>
+   </section>
 
+   <script src="js/main.js"></script>
 </body>
 
 </html>
