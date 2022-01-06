@@ -1,4 +1,3 @@
-html,
 body {
    overflow-x: hidden;
 }
@@ -17,6 +16,10 @@ body {
    max-width: 1143px;
    margin: 0 auto;
    padding: 0 15px;
+}
+
+header {
+   margin-top: 40px;
 }
 
 .header {
@@ -472,7 +475,6 @@ h3 {
 
 h4,
 .timetable-grid-date,
-.timetable-grid-title,
 .timetable-grid-text {
    margin: 0;
    font-size: 18px;
@@ -503,6 +505,7 @@ h4,
 
 .timetable-grid-item:hover .timetable-grid-text {
    max-height: 500px;
+   margin-top: 20px;
 }
 
 .timetable-grid-item:hover {
@@ -689,11 +692,13 @@ h4,
    gap: 67px;
 }
 
-.company-box-item {}
+.company-box-item:last-child {
+   flex: 0 0 202px;
+}
 
 
 .company-box-title {
-   margin-bottom: 20px;
+   margin-bottom: 26px;
 }
 
 .company-box-para {
@@ -708,7 +713,7 @@ h4,
 
 .footer {
    background: #F3F3F3;
-   padding: 43px 0 21px 0;
+   padding: 38px 0 21px 0;
 }
 
 .footer-box {
