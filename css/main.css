@@ -1,7 +1,7 @@
-/* html,
+html,
 body {
    overflow-x: hidden;
-} */
+}
 
 body {
    font-family: 'Montserrat', sans-serif;
@@ -14,7 +14,7 @@ body {
 /* <header class="header"> */
 
 .container {
-   width: 1143px;
+   max-width: 1143px;
    margin: 0 auto;
    padding: 0 15px;
 }
@@ -104,7 +104,7 @@ body {
    width: 996px;
    position: absolute;
    top: 0;
-   left: 330px;
+   right: -185px;
    z-index: 1;
 }
 
@@ -139,7 +139,7 @@ body {
 .banner-text {
    font-size: 18px;
    width: 297px;
-   margin-bottom: 55px;
+   margin-bottom: 50px;
    line-height: 166%;
    letter-spacing: 0.02em;
 }
@@ -184,7 +184,7 @@ body {
 /* <section class="events"> */
 
 .events {
-   margin: 166px 0;
+   margin: 163px 0;
    position: relative;
 }
 
@@ -260,7 +260,7 @@ h3 {
    right: 0;
    font-size: 18px;
    background: #fbf138;
-   padding: 10px 20px;
+   padding: 15px 20px;
    margin: 0;
 }
 
@@ -306,6 +306,7 @@ h3 {
 }
 
 /* <div class="popup-form"> - Форма на участие */
+
 .blackout {
    content: '';
    background-color: rgba(0, 0, 0, 0.8);
@@ -422,7 +423,7 @@ h3 {
 
 .timetable-wrapper {
    display: flex;
-   align-items: center;
+   /* align-items: center; */
    justify-content: space-between;
    margin-bottom: 38px;
 }
@@ -434,6 +435,7 @@ h3 {
 .timetable-date {
    font-weight: 700;
    font-size: 28px;
+   padding-top: 10px;
 }
 
 .timetable-grid {
@@ -468,6 +470,7 @@ h3 {
    padding: 20px 30px;
 }
 
+h4,
 .timetable-grid-date,
 .timetable-grid-title,
 .timetable-grid-text {
@@ -487,7 +490,7 @@ h3 {
 }
 
 .timetable-grid-title {
-   margin-bottom: 20px;
+   /* margin-bottom: 20px; */
 }
 
 .timetable-grid-text {
@@ -495,6 +498,7 @@ h3 {
    overflow: hidden;
    max-height: 0;
    transition: 0.3s linear;
+
 }
 
 .timetable-grid-item:hover .timetable-grid-text {
@@ -519,11 +523,16 @@ h3 {
    pointer-events: none;
 }
 
+.training-day .timetable-grid-title {
+   margin-bottom: 19px;
+}
+
 /* <section class="mailing"> - Рассылка */
 
 .mailing {
    background: #F3F3F3;
    padding: 80px 0;
+   margin-bottom: 160px;
 }
 
 .container {}
@@ -544,13 +553,14 @@ h3 {
    display: grid;
    grid-template: 1fr auto/ 372px 225px;
    justify-content: center;
-   gap: 10px 20px;
+   gap: 10px 10px;
    font-size: 11px;
 }
 
 .mailing-input {
-   padding: 19px;
+   padding: 19px 19px 19px 19px;
    border: none;
+   max-width: 372px;
 }
 
 .mailing-input:focus {
@@ -560,11 +570,13 @@ h3 {
 .btn {}
 
 .mailing-btn {
-   padding: 17px 42px;
+   padding: 24px 42px;
    border: none;
    font-family: 'Montserrat', sans-serif;
    font-size: 16px;
    letter-spacing: 0.03em;
+   margin-left: 13px;
+   width: 225px;
 }
 
 .mailing-checkbox {
@@ -607,3 +619,197 @@ h3 {
 .mailing-link:hover {
    color: #2B3541;
 }
+
+
+/* <section class="company"> - О компании */
+
+
+.company {
+   margin-bottom: 170px;
+}
+
+.company p {
+   margin: 0;
+}
+
+.company-content {
+   display: flex;
+   flex-direction: column;
+   gap: 80px;
+   justify-content: space-between;
+}
+
+.company-wrapper {
+   display: flex;
+   gap: 77px;
+   justify-content: space-between;
+}
+
+.company-wrapper-description {}
+
+.company-wrapper-title {
+   margin-bottom: 25px;
+}
+
+.company-wrapper-text {
+   font-size: 18px;
+   line-height: 150%;
+   width: 490px;
+}
+
+
+.company-wrapper-btn {
+   display: inline-block;
+   margin-top: 34px;
+   padding: 22px 51px;
+}
+
+.company-wrapper-img {
+   width: 100%;
+   height: 336px;
+   position: relative;
+   overflow: hidden;
+   background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+
+}
+
+.company-wrapper-img img {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   object-fit: cover;
+   width: 100%;
+   height: 336px;
+   opacity: .8;
+}
+
+.company-box {
+   display: flex;
+   gap: 67px;
+}
+
+.company-box-item {}
+
+
+.company-box-title {
+   margin-bottom: 20px;
+}
+
+.company-box-para {
+   font-size: 18px;
+   line-height: 150%;
+   color: rgba(43, 53, 65, .6);
+}
+
+
+/* <footer class="footer"> */
+
+
+.footer {
+   background: #F3F3F3;
+   padding: 43px 0 21px 0;
+}
+
+.footer-box {
+   margin-bottom: 21px;
+   gap: 5px;
+}
+
+.footer-menu {
+   /* gap: 5px; */
+}
+
+.footer-logo {}
+
+.footer-nav {
+   padding-left: 21px;
+   gap: 91px;
+}
+
+.footer-nav a {
+   font-size: 14px;
+
+}
+
+.footer-mail {
+   font-weight: 700;
+   font-size: 16px;
+   margin-left: 153px;
+}
+
+.footer-mail {
+   position: relative;
+   z-index: 1;
+}
+
+.footer-mail::before {
+   content: '';
+   display: inline-block;
+   width: 25px;
+   height: 25px;
+   border-radius: 100%;
+   background: #FBF138;
+   box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+   position: absolute;
+   left: -19px;
+   top: -12px;
+   z-index: -1;
+}
+
+.footer-social {}
+
+.footer-insta,
+.footer-fb {
+   width: 27px;
+   height: 27px;
+}
+
+.footer-wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer-item,
+.footer-link {
+   font-size: 14px;
+   color: rgba(43, 53, 65, .3);
+}
+
+.footer-link {}
+
+
+/* кнопка наверх */
+
+.button-up {
+   background: url(../img/icons/arrowUp.svg);
+   width: 52px;
+   height: 55px;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   transition: 1s;
+}
+
+.button-up:hover {
+   box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+}
+
+.button-up.hidden {
+   opacity: 0;
+}
+
+.button-up.visible {
+   opacity: 0.5;
+}
+
+
+
+/* 
+@media (max-width: 1920px) {
+   .banner-img img {
+      max-width: unset;
+      width: 60vw;
+      height: 50vw;
+   }
+} */

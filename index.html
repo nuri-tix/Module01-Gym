@@ -15,7 +15,7 @@
 
 <body>
 
-   <header>
+   <header id="headerTop">
       <div class="container">
          <div class="header">
             <div class="header-menu">
@@ -46,9 +46,8 @@
                   <p class="banner-text">в области спортивной физиологии и нутрициологии
                   </p>
                   <a href="#" class="btn">Узнать подробнее</a>
-
                </div>
-               <a href="#" class="banner-arrow"></a>
+               <a href="#timetable" class="banner-arrow"></a>
             </div>
             <div class="banner-img">
                <img src="img/banner.png" alt="">
@@ -123,7 +122,7 @@
       </div>
    </section>
 
-   <section class="timetable">
+   <section class="timetable" id="timetable">
       <div class="container">
          <div class="timetable-wrapper">
             <h2 class="timetable-title">Расписание тренировок</h2>
@@ -147,7 +146,7 @@
                      <img src="img/icons/jump.svg" alt="Скакалка" class="timetable-grid-img">
                      <h4 class="timetable-grid-title">Силовой микс</h4>
                      <p class="timetable-grid-text training-day-text">
-                        Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+                        Упражнения помогут создать красивый рельеф и прийти в&nbsp;спортивную форму.
                      </p>
                   </div>
                </div>
@@ -218,6 +217,89 @@
          </form>
       </div>
    </section>
+
+   <section class="company">
+      <div class="container">
+         <div class="company-content">
+            <div class="company-wrapper">
+               <div class="company-wrapper-description">
+                  <h2 class="company-wrapper-title">О компании</h2>
+                  <p class="company-wrapper-text">
+                     Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь
+                     с&nbsp;нами
+                     и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.
+                  </p>
+                  <a class="btn company-wrapper-btn" type="submit" onclick="openModal()">записаться</a>
+               </div>
+               <div class="company-wrapper-img">
+                  <img src="img/trainer.png" alt="Тренировка">
+               </div>
+            </div>
+            <div class="company-box">
+               <div class="company-box-item">
+                  <h4 class="company-box-title">Экономия времени</h4>
+                  <p class="company-box-para">
+                     Не нужно тратить время на дорогу
+                  </p>
+               </div>
+               <div class="company-box-item">
+                  <h4 class="company-box-title">Индивидуальный подход</h4>
+                  <p class="company-box-para">
+                     Внимание тренера пренадлежит только вам
+                  </p>
+               </div>
+               <div class="company-box-item">
+                  <h4 class="company-box-title">Экономия денег</h4>
+                  <p class="company-box-para">
+                     Средняя цена одной тренировки - 700₽
+                  </p>
+               </div>
+               <div class="company-box-item">
+                  <h4 class="company-box-title">Опытный персонал</h4>
+                  <p class="company-box-para">
+                     Стаж работы у наших тренеров от 5 лет
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="header footer-box">
+            <div class="header-menu footer-menu">
+               <a href="#" class="header-logo footer-logo"></a>
+               <nav>
+                  <ul class="header-nav footer-nav">
+                     <li><a href="#">Мероприятия</a></li>
+                     <li><a href="#">Расписание</a></li>
+                     <li><a href="#">О компании</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="footer-mail">
+               info@freefit.com
+            </div>
+            <div class="header-social footer-social">
+               <a href="#" class="header-insta footer-insta"></a>
+               <a href="#" class="header-fb footer-fb"></a>
+            </div>
+         </div>
+         <div class="footer-wrapper">
+            <div class="footer-item">
+               © 2020, Все права защищены
+            </div>
+            <div class="footer-item">
+               Сделано в рамках курса учебной платформы <a href="#" class="footer-link">Annblok</a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Кнопка наверх -->
+
+   <a href="#headerTop" class="button-up hidden" id="btnUp"></a>
 
    <script src="js/main.js"></script>
 </body>
