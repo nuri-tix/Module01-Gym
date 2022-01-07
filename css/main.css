@@ -812,7 +812,9 @@ h4,
    color: rgba(43, 53, 65, .3);
 }
 
-.footer-link {}
+.footer-link:hover {
+   color: #2B3541;
+}
 
 
 /* кнопка наверх */
