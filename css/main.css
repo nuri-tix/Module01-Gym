@@ -526,8 +526,7 @@ h4,
    line-height: 150%;
    overflow: hidden;
    max-height: 0;
-   transition: 0.3s linear;
-
+   transition: 0.5s linear;
 }
 
 .timetable-grid-item:hover .timetable-grid-text {
@@ -820,9 +819,9 @@ h4,
 /* кнопка наверх */
 
 .button-up {
-   background: url(../img/icons/arrowUp.svg);
-   width: 52px;
-   height: 55px;
+   background: url(../img/icons/arrowUp.svg) no-repeat center / cover;
+   width: 32px;
+   height: 35px;
    position: fixed;
    bottom: 20px;
    right: 20px;
