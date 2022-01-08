@@ -11,7 +11,7 @@
 // }
 
 function openModal(name) {
-   document.body.className = 'modal-' + name;  
+   document.body.className = 'js-modal-' + name;  
 }
 
 function closeModal() {
