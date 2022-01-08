@@ -1,0 +1,12 @@
+@media (min-width: 1200px) {}
+
+@media (max-width: 1000px) {
+   .banner-img img {
+      position: none;
+   }
+
+   nav {
+      display: none;
+   }
+
+}

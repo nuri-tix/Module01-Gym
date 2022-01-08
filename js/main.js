@@ -1,4 +1,16 @@
-// Модальное окно
+// Модальное окно - бургер-меню
+
+function openModal() {
+   document.getElementById("modal").style.left = "28%";
+   
+}
+
+function closeModal() {
+   document.getElementById("modal").style.left = "100%";
+  
+}
+
+// Модальное окно - кнопка
 
 function openModal() {
    document.getElementById("popupWindow").style.left = "28%";

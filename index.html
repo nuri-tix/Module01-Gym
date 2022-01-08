@@ -11,6 +11,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -18,6 +19,9 @@
    <header id="headerTop">
       <div class="container">
          <div class="header">
+            <div class="header-burger">
+               <button class="burger" onclick="openModal()"></button>
+            </div>
             <div class="header-menu">
                <a href="#" class="header-logo"></a>
                <nav>
@@ -71,6 +75,7 @@
                   Марафон выносливости
                </h3>
                <p class="events-grid-text">марафон</p>
+               <div class="events-grid-plus"></div>
                <button class="events-grid-btn" onclick="openModal()">Участвовать</button>
             </div>
             <div class="events-grid-item">
@@ -83,6 +88,7 @@
                   Как стать<br>тренером?
                </h3>
                <p class="events-grid-text">вебинар</p>
+               <div class="events-grid-plus"></div>
                <button class="events-grid-btn" onclick="openModal()">Участвовать</button>
             </div>
             <div class="events-grid-item">
@@ -95,6 +101,7 @@
                   Йога, как стиль жизни
                </h3>
                <p class="events-grid-text">вебинар</p>
+               <div class="events-grid-plus"></div>
                <button class="events-grid-btn" onclick="openModal()">Участвовать</button>
             </div>
          </div>
@@ -278,12 +285,14 @@
                   </ul>
                </nav>
             </div>
-            <div class="footer-mail">
-               info@freefit.com
-            </div>
-            <div class="header-social footer-social">
-               <a href="#" class="header-insta footer-insta"></a>
-               <a href="#" class="header-fb footer-fb"></a>
+            <div class="footer-flex">
+               <div class="footer-mail">
+                  info@freefit.com
+               </div>
+               <div class="header-social footer-social">
+                  <a href="#" class="header-insta footer-insta"></a>
+                  <a href="#" class="header-fb footer-fb"></a>
+               </div>
             </div>
          </div>
          <div class="footer-wrapper">
@@ -300,6 +309,33 @@
    <!-- Кнопка наверх -->
 
    <a href="#headerTop" class="button-up hidden" id="btnUp"></a>
+
+   <!-- Меню - Модальное окно -->
+
+   <div id="modal" class="modal">
+      <div class="modal-wrapper">
+         <div class="header modal-header">
+            <div class="header-menu modal-menu">
+               <a href="#" class="header-logo modal-logo"></a>
+               <nav>
+                  <ul class="header-nav modal-nav">
+                     <li><a href="#">Мероприятия</a></li>
+                     <li><a href="#">Расписание</a></li>
+                     <li><a href="#">О компании</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="header-social modal-social">
+               <a href="#" class="header-insta modal-insta"></a>
+               <a href="#" class="header-fb modal-fb"></a>
+            </div>
+         </div>
+         <div class="banner-box modal-box">
+            <a href="#" class="btn modal-btn">Узнать подробнее</a>
+         </div>
+      </div>
+      <button class="burger-close" onclick="closeModal()"></button> <!-- закрыть модальное окно -->
+   </div>
 
    <script src="js/main.js"></script>
 </body>

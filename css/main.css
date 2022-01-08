@@ -1,5 +1,7 @@
-html {
+html,
+body {
    scroll-behavior: smooth;
+   overflow-x: hidden;
 }
 
 body {
@@ -7,7 +9,6 @@ body {
    color: #2B3541;
    margin: 0;
    padding: 0;
-   overflow-x: hidden;
 }
 
 
@@ -103,19 +104,30 @@ header {
 
 .banner-wrapper {}
 
-.banner-img {}
+/* .banner-img {}
 
 .banner-img img {
-   width: 996px;
+   max-width: 996px;
    position: absolute;
    top: 0;
    right: -185px;
-   z-index: 1;
+} */
+
+.banner-img {
+   width: 100%;
+   overflow: hidden;
 }
 
-/* .banner-img img {
+.banner-img img {
    max-width: 100%;
-} */
+   /* max-height: 852px; */
+   object-fit: cover;
+   position: absolute;
+   top: 50%;
+   left: 73%;
+   transform: translate(-50%, -50%);
+}
+
 
 .banner-title {
    font-weight: 700;
@@ -311,6 +323,30 @@ h3 {
    display: none;
 }
 
+/* Кнопка для мобилки*/
+
+.events-grid-plus {
+   display: none;
+   background: #2B3541;
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+.events-grid-plus::before {
+   content: '';
+   position: absolute;
+   bottom: 25%;
+   right: 25%;
+   background: url(../img/icons/plus.svg) no-repeat center center / cover;
+   width: 14px;
+   height: 14px;
+   margin: 0;
+}
+
+
 /* <div class="popup-form"> - Форма на участие */
 
 .blackout {
@@ -377,6 +413,7 @@ h3 {
    left: 39px;
    top: -30px;
    z-index: -1;
+
 }
 
 .popup-window-text {
@@ -470,7 +507,7 @@ h3 {
 
 .timetable-grid {
    display: grid;
-   grid-template-columns: repeat(3, minmax(340px, 1fr));
+   grid-template-columns: repeat(3, minmax(250px, 1fr));
    gap: 20px;
 }
 
@@ -562,19 +599,19 @@ h4,
    background: #F3F3F3;
    padding: 80px 0;
    margin-bottom: 160px;
-}
-
-.container {}
-
-.mailing-title {
-   position: relative;
-   z-index: 1;
-   margin-bottom: 40px;
    text-align: center;
 }
 
+.mailing-title {
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+   margin-bottom: 40px;
+}
+
 .mailing-title::before {
-   left: 244px;
+   position: absolute;
+   left: -32px;
    top: -19px;
 }
 
@@ -743,11 +780,11 @@ h4,
 
 .footer {
    background: #F3F3F3;
-   padding: 38px 0 21px 0;
+   padding: 50px 0 21px 0;
 }
 
 .footer-box {
-   margin-bottom: 21px;
+   margin-bottom: 30px;
    gap: 5px;
 }
 
@@ -760,6 +797,7 @@ h4,
 .footer-nav {
    padding-left: 21px;
    gap: 91px;
+   margin: 0;
 }
 
 .footer-nav a {
@@ -767,15 +805,21 @@ h4,
 
 }
 
-.footer-mail {
-   font-weight: 700;
-   font-size: 16px;
-   margin-left: 153px;
+.footer-flex {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 62px;
 }
+
+.footer-mail {}
 
 .footer-mail {
    position: relative;
    z-index: 1;
+   font-weight: 700;
+   font-size: 16px;
+   /* margin-left: 153px; */
 }
 
 .footer-mail::before {
@@ -839,6 +883,126 @@ h4,
 .button-up.visible {
    opacity: 0.5;
 }
+
+
+
+/* Модальное окно <button class="burger" onclick="openModal()">*/
+
+.burger {
+   background: url(../img/icons/burgermenu.svg) no-repeat center /contain;
+   width: 29px;
+   height: 22px;
+   border: none;
+   cursor: pointer;
+}
+
+#modal {
+   max-width: 360px;
+   background: #F3F3F3;
+   text-align: center;
+   position: absolute;
+   top: -500px;
+   left: 0;
+   right: 0;
+   margin: 20px auto 0;
+   transition: 0.3s;
+   box-sizing: border-box;
+}
+
+.modal {}
+
+.modal-wrapper {
+   display: flex;
+   flex-direction: column;
+}
+
+.modal-header {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 40px;
+   padding: 29px 10px 20px;
+}
+
+.modal-menu {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 44px;
+
+}
+
+.modal-logo {
+   width: 78px;
+   height: 24px;
+   align-items: flex-start;
+}
+
+.modal-nav {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   text-align: start;
+   gap: 0;
+   padding: 0;
+   margin: 0;
+}
+
+.modal-nav a {
+   font-size: 16px;
+   pointer-events: none;
+}
+
+.modal-nav li::after {
+   content: '';
+   display: block;
+   width: 340px;
+   height: 1px;
+   background: rgba(43, 53, 65, .2);
+   margin-top: 20px;
+   margin-bottom: 24px;
+}
+
+.modal-nav li:last-child::after {
+   content: none;
+}
+
+.modal-social {
+   gap: 20px;
+   align-self: flex-end;
+   padding-right: 21px;
+}
+
+.modal-insta,
+.modal-fb {
+   width: 26px;
+   height: 26px;
+}
+
+.modal-box {
+   background: rgba(43, 53, 65, .4);
+   padding: 30px 10px;
+}
+
+.modal-btn {
+   display: inline-block;
+   padding: 26px 72px;
+}
+
+.burger-close {
+   background: url(../img/icons/close.svg) no-repeat center / contain;
+   width: 20px;
+   height: 19px;
+   border: none;
+   position: absolute;
+   top: 30px;
+   right: 10px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+
+
 
 
 
