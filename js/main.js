@@ -1,26 +1,35 @@
 // Модальное окно - бургер-меню
 
-function openModal() {
-   document.getElementById("modal").style.left = "28%";
+// function openModal(menu) {
+//    document.getElementById("modal").style.left = "28%";
    
+// }
+
+// function closeModal() {
+//    document.getElementById("modal").style.left = "100%";
+  
+// }
+
+function openModal(name) {
+   document.body.className = 'modal-' + name;  
 }
 
 function closeModal() {
-   document.getElementById("modal").style.left = "100%";
-  
+   document.body.className = '';
 }
+
 
 // Модальное окно - кнопка
 
-function openModal() {
-   document.getElementById("popupWindow").style.left = "28%";
-   document.querySelector(".blackout").style.display = 'block';
-}
+// function openModal(form) {
+//    document.getElementById("popupWindow").style.left = "28%";
+//    document.querySelector(".blackout").style.display = 'block';
+// }
 
-function closeModal() {
-   document.getElementById("popupWindow").style.left = "100%";
-   document.querySelector(".blackout").style.display = 'none';
-}
+// function closeModal() {
+//    document.getElementById("popupWindow").style.left = "100%";
+//    document.querySelector(".blackout").style.display = 'none';
+// }
 
 // Button Up
 
