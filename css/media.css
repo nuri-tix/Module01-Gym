@@ -6,12 +6,9 @@
 }
 
 @media (max-width: 1166px) {
-   .events-grid-title {
-      padding: 21px 0 0 18px;
-   }
 
    .events-grid-title {
-      top: 0;
+      top: 10px;
       left: 10px;
    }
 
@@ -77,6 +74,10 @@
 
    .events-grid-itemBig .events-grid-title {
       width: 260px;
+   }
+
+   .events-grid-btn {
+      display: none;
    }
 
    .events-grid-item {
@@ -146,6 +147,10 @@
       padding-left: 0;
    }
 
+   .events-grid-titleOne {
+      width: 134px;
+   }
+
    .timetable-grid {
       grid-template-columns: repeat(2, 1fr)
    }
@@ -195,7 +200,9 @@
       display: none;
    }
 
-
+   .events-grid {
+      gap: 10px;
+   }
 
    .events-grid-plus {
       display: block;
@@ -257,9 +264,6 @@
       height: 75vw;
    }
 
-   .events-grid-titleOne {
-      width: 134px;
-   }
 
    .events-grid-itemBig .events-grid-title {
       width: 117px;
@@ -428,6 +432,10 @@
       align-items: flex-start;
    }
 
+   .timetable-grid-date {
+      margin-bottom: 20px;
+   }
+
    .timetable-grid-img {
       margin-bottom: 0;
    }
@@ -452,6 +460,10 @@
       font-size: 16px;
    }
 
+   .mailing {
+      padding: 57px 0 40px;
+   }
+
    .mailing-title {
       width: 207px;
    }
@@ -462,10 +474,49 @@
    }
 
    .footer {
-      padding: 0;
+      padding: 40px 0;
    }
 
    .footer-nav {
       padding-left: 0;
+   }
+}
+
+@media (max-width: 400px) {
+
+
+   .footer-nav,
+   .footer-social {
+      gap: 20px;
+   }
+
+   .footer-flex {
+      gap: 85px;
+   }
+
+}
+
+@media (max-width: 360px) {
+   .banner-title {
+      font-size: 22px;
+   }
+
+   h2 {
+      font-size: 20px;
+   }
+
+   .timetable-title {
+      width: 224px;
+   }
+
+   h4,
+   .timetable-date,
+   .company-wrapper-text,
+   .company-box-para {
+      font-size: 14px;
+   }
+
+   .timetable-grid-date {
+      font-size: 12px;
    }
 }
