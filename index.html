@@ -19,9 +19,6 @@
    <header id="headerTop">
       <div class="container">
          <div class="header">
-            <div class="header-burger">
-               <button class="burger" onclick="openModal('menu')"></button>
-            </div>
             <div class="header-menu">
                <a href="#" class="header-logo"></a>
                <nav>
@@ -31,6 +28,9 @@
                      <li><a href="#">О компании</a></li>
                   </ul>
                </nav>
+            </div>
+            <div class="header-burger">
+               <button class="burger" onclick="openModal('menu')"></button>
             </div>
             <div class="header-social">
                <a href="#" class="header-insta"></a>
@@ -70,12 +70,14 @@
                   <img src="img/maraphon.png" alt="Марафон выносливости">
                </div>
                <div class="events-grid-overlay"></div>
-               <h3 class="events-grid-title">
+               <h3 class="events-grid-title events-grid-titleOne">
                   <span>29.06 - 4.07</span>
                   Марафон выносливости
                </h3>
-               <p class="events-grid-text">марафон</p>
-               <div class="events-grid-plus"></div>
+               <div class="events-grid-plusBox">
+                  <p class="events-grid-text">марафон</p>
+                  <div class="events-grid-plus"></div>
+               </div>
                <button class="events-grid-btn" onclick="openModal('form')">Участвовать</button>
             </div>
             <div class="events-grid-item">
@@ -87,11 +89,13 @@
                   <span>9.07</span>
                   Как стать<br>тренером?
                </h3>
-               <p class="events-grid-text">вебинар</p>
-               <div class="events-grid-plus"></div>
+               <div class="events-grid-plusBox">
+                  <p class="events-grid-text">вебинар</p>
+                  <div class="events-grid-plus"></div>
+               </div>
                <button class="events-grid-btn" onclick="openModal('form')">Участвовать</button>
             </div>
-            <div class="events-grid-item">
+            <div class="events-grid-item events-grid-itemBig">
                <div class="events-grid-cover">
                   <img src="img/Vebinar2.png" alt="Йога, как стиль жизни">
                </div>
@@ -100,8 +104,10 @@
                   <span>15.07</span>
                   Йога, как стиль жизни
                </h3>
-               <p class="events-grid-text">вебинар</p>
-               <div class="events-grid-plus"></div>
+               <div class="events-grid-plusBox">
+                  <p class="events-grid-text">вебинар</p>
+                  <div class="events-grid-plus"></div>
+               </div>
                <button class="events-grid-btn" onclick="openModal('form')">Участвовать</button>
             </div>
          </div>
@@ -141,20 +147,24 @@
                   <p class="timetable-grid-date">22 июня, 10:00</p>
                   <div class="timetable-grid-box">
                      <img src="img/icons/body.svg" alt="Тренинг" class="timetable-grid-img">
-                     <h4 class="timetable-grid-title">Функциональный тренинг</h4>
-                     <p class="timetable-grid-text">
-                        Подготовка тела перед физической нагрузкой.
-                     </p>
+                     <div class="timetable-grid-titleBox">
+                        <h4 class="timetable-grid-title">Функциональный тренинг</h4>
+                        <p class="timetable-grid-text">
+                           Подготовка тела перед физической нагрузкой.
+                        </p>
+                     </div>
                   </div>
                </div>
                <div class="timetable-grid-item training-day">
                   <p class="timetable-grid-date">23 июня, 10:00</p>
                   <div class="timetable-grid-box">
                      <img src="img/icons/jump.svg" alt="Скакалка" class="timetable-grid-img">
-                     <h4 class="timetable-grid-title">Силовой микс</h4>
-                     <p class="timetable-grid-text training-day-text">
-                        Упражнения помогут создать красивый рельеф и прийти в&nbsp;спортивную форму.
-                     </p>
+                     <div class="timetable-grid-titleBox">
+                        <h4 class="timetable-grid-title">Силовой микс</h4>
+                        <p class="timetable-grid-text training-day-text">
+                           Упражнения помогут создать красивый рельеф и прийти в&nbsp;спортивную форму.
+                        </p>
+                     </div>
                   </div>
                </div>
             </div>
@@ -163,20 +173,24 @@
                   <p class="timetable-grid-date">24 июня, 10:00</p>
                   <div class="timetable-grid-box">
                      <img src="img/icons/bottle.svg" alt="Бутылка" class="timetable-grid-img">
-                     <h4 class="timetable-grid-title">Body sculpt</h4>
-                     <p class="timetable-grid-text">
-                        Подготовка тела перед физической нагрузкой.
-                     </p>
+                     <div class="timetable-grid-titleBox">
+                        <h4 class="timetable-grid-title">Body sculpt</h4>
+                        <p class="timetable-grid-text">
+                           Подготовка тела перед физической нагрузкой.
+                        </p>
+                     </div>
                   </div>
                </div>
                <div class="timetable-grid-item">
                   <p class="timetable-grid-date">25 июня, 11:00</p>
                   <div class="timetable-grid-box">
                      <img src="img/icons/heart.svg" alt="Сердце" class="timetable-grid-img">
-                     <h4 class="timetable-grid-title">Дыхательные практики</h4>
-                     <p class="timetable-grid-text">
-                        Подготовка тела перед физической нагрузкой.
-                     </p>
+                     <div class="timetable-grid-titleBox">
+                        <h4 class="timetable-grid-title">Дыхательные практики</h4>
+                        <p class="timetable-grid-text">
+                           Подготовка тела перед физической нагрузкой.
+                        </p>
+                     </div>
                   </div>
                </div>
             </div>
@@ -185,20 +199,24 @@
                   <p class="timetable-grid-date">26 июня, 11:00</p>
                   <div class="timetable-grid-box">
                      <img src="img/icons/dumbbell.svg" alt="Гантеля" class="timetable-grid-img">
-                     <h4 class="timetable-grid-title">L.A.B.</h4>
-                     <p class="timetable-grid-text">
-                        Подготовка тела перед физической нагрузкой.
-                     </p>
+                     <div class="timetable-grid-titleBox">
+                        <h4 class="timetable-grid-title">L.A.B.</h4>
+                        <p class="timetable-grid-text">
+                           Подготовка тела перед физической нагрузкой.
+                        </p>
+                     </div>
                   </div>
                </div>
                <div class="timetable-grid-item">
                   <p class="timetable-grid-date">27 июня, 10:00</p>
                   <div class="timetable-grid-box">
                      <img src="img/icons/weight.svg" alt="Гиря" class="timetable-grid-img">
-                     <h4 class="timetable-grid-title">Комплексная разминка</h4>
-                     <p class="timetable-grid-text">
-                        Подготовка тела перед физической нагрузкой.
-                     </p>
+                     <div class="timetable-grid-titleBox">
+                        <h4 class="timetable-grid-title">Комплексная разминка</h4>
+                        <p class="timetable-grid-text">
+                           Подготовка тела перед физической нагрузкой.
+                        </p>
+                     </div>
                   </div>
                </div>
             </div>
@@ -228,20 +246,23 @@
    <section class="company">
       <div class="container">
          <div class="company-content">
-            <div class="company-wrapper">
-               <div class="company-wrapper-description">
-                  <h2 class="company-wrapper-title">О компании</h2>
-                  <p class="company-wrapper-text">
-                     Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь
-                     с&nbsp;нами
-                     и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.
-                  </p>
-                  <a class="btn company-wrapper-btn" onclick="openModal('form')">записаться</a>
-               </div>
-               <div class="company-wrapper-img">
-                  <img src="img/trainer.png" alt="Тренировка">
-               </div>
+            <!-- <div class="company-wrapper"> -->
+            <div class="company-wrapper-description">
+               <h2 class="company-wrapper-title">О компании</h2>
+               <p class="company-wrapper-text">
+                  Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь
+                  с&nbsp;нами
+                  и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.
+               </p>
+               <!-- <a class="btn company-wrapper-btn" onclick="openModal('form')">записаться</a> -->
             </div>
+            <div class="company-wrapper-btnbox">
+               <a class="btn company-wrapper-btn" onclick="openModal('form')">записаться</a>
+            </div>
+            <div class="company-wrapper-img">
+               <img src="img/trainer.png" alt="Тренировка">
+            </div>
+            <!-- </div> -->
             <div class="company-box">
                <div class="company-box-item">
                   <h4 class="company-box-title">Экономия времени</h4>
@@ -314,27 +335,24 @@
 
    <div class="blackout-menu">
       <div id="modal" class="modal">
-         <div class="modal-wrapper">
-            <div class="header modal-header">
-               <div class="header-menu modal-menu">
-                  <a href="#" class="header-logo modal-logo"></a>
-                  <nav>
-                     <ul class="header-nav modal-nav">
-                        <li><a href="#">Мероприятия</a></li>
-                        <li><a href="#">Расписание</a></li>
-                        <li><a href="#">О компании</a></li>
-                     </ul>
-                  </nav>
-               </div>
-               <div class="header-social modal-social">
-                  <a href="#" class="header-insta modal-insta"></a>
-                  <a href="#" class="header-fb modal-fb"></a>
-               </div>
+
+         <div class="header modal-header">
+            <div class="header-menu modal-menu">
+               <a href="#" class="header-logo modal-logo"></a>
+               <nav>
+                  <ul class="header-nav modal-nav">
+                     <li><a href="#">Мероприятия</a></li>
+                     <li><a href="#">Расписание</a></li>
+                     <li><a href="#">О компании</a></li>
+                  </ul>
+               </nav>
             </div>
-            <div class="banner-box modal-box">
-               <a href="#" class="btn modal-btn">Узнать подробнее</a>
+            <div class="header-social modal-social">
+               <a href="#" class="header-insta modal-insta"></a>
+               <a href="#" class="header-fb modal-fb"></a>
             </div>
          </div>
+
          <button class="burger-close" onclick="closeModal()"></button> <!-- закрыть модальное окно -->
       </div>
    </div>
