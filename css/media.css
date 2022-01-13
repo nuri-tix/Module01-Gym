@@ -367,11 +367,11 @@
 
    .company-wrapper-btnbox {
       text-align: center;
-      /* width: 100%; */
    }
 
    .company-wrapper-btn {
-      /* width: 100%; */
+      padding: 20px 0;
+      width: 100%;
    }
 
    .footer-nav a,
@@ -456,6 +456,10 @@
       margin-bottom: 55px;
    }
 
+   .timetable-title {
+      width: 50%;
+   }
+
    .timetable-grid-date {
       font-size: 16px;
    }
@@ -498,16 +502,15 @@
 
 @media (max-width: 360px) {
    .banner-title {
-      font-size: 22px;
+      font-size: 21px;
+      padding-right: 0;
+      width: 100%;
    }
 
    h2 {
       font-size: 20px;
    }
 
-   .timetable-title {
-      width: 224px;
-   }
 
    h4,
    .timetable-date,
@@ -519,4 +522,9 @@
    .timetable-grid-date {
       font-size: 12px;
    }
+
+   .training-day-text {
+      width: 100%;
+   }
+
 }
