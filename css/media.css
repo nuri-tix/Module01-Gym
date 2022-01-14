@@ -397,9 +397,18 @@
       font-size: 18px;
    }
 
-   .popup-btn,
+   .popup-window-text {
+      width: 86%;
+   }
+
    .popup-input {
-      width: 100%;
+      width: 80vw;
+   }
+
+   .popup-btn {
+      width: 80vw;
+      text-align: center;
+      padding: 25px 0;
    }
 
    .title-before::before {
@@ -566,28 +575,8 @@
       margin-bottom: 38px;
    }
 
-   h2 {
-      /* font-size: 20px; */
-   }
-
-
-   h4,
-   .timetable-date,
-   .company-wrapper-text,
-   .company-box-para {
-      /* font-size: 14px; */
-   }
-
-   .timetable-grid-date {
-      /* font-size: 12px; */
-   }
-
    .training-day-text {
       width: 100%;
-   }
-
-   .modal-nav li::after {
-      width: 300px;
    }
 
    .footer-logo {
@@ -601,9 +590,6 @@
       height: 27px;
    }
 
-   .modal-nav li::after {
-      max-width: 100%;
-   }
 }
 
 @media (max-width: 359px) {
