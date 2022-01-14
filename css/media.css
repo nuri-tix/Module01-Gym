@@ -230,9 +230,7 @@
 
 @media (max-width: 700px) {
 
-   .banner-btn {
-      display: block;
-   }
+
 
    .banner-title {
       font-size: 26px;
@@ -417,7 +415,9 @@
 
 
 @media (max-width: 540px) {
-
+   .banner-btn {
+      display: block;
+   }
 
    .timetable-grid-body {
       width: 39px;
