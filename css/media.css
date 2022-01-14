@@ -229,6 +229,11 @@
 }
 
 @media (max-width: 700px) {
+
+   .banner-btn {
+      display: block;
+   }
+
    .banner-title {
       font-size: 26px;
       width: 358px;
@@ -245,6 +250,10 @@
    .banner-box {
       padding-left: 0;
       margin-bottom: 70px;
+   }
+
+   .btn {
+      text-align: center;
    }
 
    .banner-arrow {
@@ -307,8 +316,8 @@
    .mailing-title::before {
       width: 31px;
       height: 31px;
-      left: -19px;
-      top: -9px;
+      left: -14px;
+      top: -12px;
    }
 
    .mailing-form {
@@ -383,37 +392,59 @@
    .footer-link {
       font-size: 10px;
    }
+
+   .popup-window-title,
+   .popup-window-text {
+      /* font-size: 4vw; */
+      font-size: 18px;
+   }
+
+   .popup-btn,
+   .popup-input {
+      width: 100%;
+   }
+
+   .title-before::before {
+      width: 31px;
+      height: 31px;
+      left: 102px;
+      top: -17px;
+   }
+
 }
+
+@media (max-width: 560px) {}
+
 
 @media (max-width: 540px) {
 
 
-   .timetable-grid-itemLeft .timetable-grid-img:nth-child(1) {
+   .timetable-grid-body {
       width: 39px;
       height: 39px;
    }
 
-   .timetable-grid-itemLeft .timetable-grid-img:nth-child(2) {
+   .timetable-grid-jump {
       width: 34px;
       height: 53px;
    }
 
-   .timetable-grid-itemCenter .timetable-grid-img:nth-child(1) {
+   .timetable-grid-bottle {
       width: 23px;
       height: 45px;
    }
 
-   .timetable-grid-itemCenter .timetable-grid-img:nth-child(2) {
+   .timetable-grid-heart {
       width: 39px;
       height: 37px;
    }
 
-   .timetable-grid-itemRight .timetable-grid-img:nth-child(1) {
+   .timetable-grid-dumbbell {
       width: 46px;
       height: 25px;
    }
 
-   .timetable-grid-itemRight .timetable-grid-img:nth-child(2) {
+   .timetable-grid-weight {
       width: 35px;
       height: 40px;
    }
@@ -501,14 +532,42 @@
 }
 
 @media (max-width: 360px) {
+   header {
+      margin-top: 32px;
+   }
+
+   .header-logo {
+      width: 78px;
+      height: 24px;
+   }
+
+   .header-insta,
+   .header-fb {
+      width: 26px;
+      height: 26px;
+   }
+
+   .banner {
+      margin-top: 14px;
+   }
+
    .banner-title {
-      font-size: 21px;
+      font-size: 25px;
       padding-right: 0;
+      padding-top: 46px;
       width: 100%;
    }
 
+   .banner-training {
+      margin-top: 47px;
+   }
+
+   .banner-text {
+      margin-bottom: 38px;
+   }
+
    h2 {
-      font-size: 20px;
+      /* font-size: 20px; */
    }
 
 
@@ -516,15 +575,47 @@
    .timetable-date,
    .company-wrapper-text,
    .company-box-para {
-      font-size: 14px;
+      /* font-size: 14px; */
    }
 
    .timetable-grid-date {
-      font-size: 12px;
+      /* font-size: 12px; */
    }
 
    .training-day-text {
       width: 100%;
    }
+
+   .modal-nav li::after {
+      width: 300px;
+   }
+
+   .footer-logo {
+      width: 97px;
+      height: 30px;
+   }
+
+   .footer-insta,
+   .footer-fb {
+      width: 27px;
+      height: 27px;
+   }
+
+   .modal-nav li::after {
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 359px) {
+   .banner-title {
+      font-size: 21px;
+   }
+}
+
+@media (max-width: 328px) {
+   .banner-text {
+      width: 100%;
+   }
+
 
 }

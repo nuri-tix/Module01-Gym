@@ -23,9 +23,9 @@
                <a href="#" class="header-logo"></a>
                <nav>
                   <ul class="header-nav">
-                     <li><a href="#">Мероприятия</a></li>
-                     <li><a href="#">Расписание</a></li>
-                     <li><a href="#">О компании</a></li>
+                     <li><a href="#menuEvents">Мероприятия</a></li>
+                     <li><a href="#menuTimetable">Расписание</a></li>
+                     <li><a href="#menuCompany">О компании</a></li>
                   </ul>
                </nav>
             </div>
@@ -49,7 +49,7 @@
                <div class="banner-box">
                   <p class="banner-text">в области спортивной физиологии и нутрициологии
                   </p>
-                  <a href="#" class="btn">Узнать подробнее</a>
+                  <a href="#" class="btn banner-btn">Узнать подробнее</a>
                </div>
                <a href="#timetable" class="banner-arrow"></a>
             </div>
@@ -61,7 +61,7 @@
 
    </section>
 
-   <section class="events">
+   <section class="events" id="menuEvents">
       <div class="container">
          <h2 class="events-title">Ближайшие события</h2>
          <div class="events-grid">
@@ -114,8 +114,8 @@
          <!-- Форма - Зявка на участие -->
          <div class="blackout">
             <div id="popupWindow" class="popup-window">
+
                <div class="popup-window-wrapper">
-                  <button class="popup-window-close" onclick="closeModal()"></button>
                   <div class="popup-window-box">
                      <h3 class="popup-window-title title-before">Заявка на участие «Марафон&nbsp;выносливости»</h3>
                      <p class="popup-window-text">
@@ -130,12 +130,13 @@
                      <button class="btn popup-btn" type="submit">Отправить</button>
                   </form>
                </div>
+               <button class="popup-window-close" onclick="closeModal()"></button><!-- закрыть модальное окно -->
             </div>
          </div>
       </div>
    </section>
 
-   <section class="timetable" id="timetable">
+   <section class="timetable" id="menuTimetable">
       <div class="container">
          <div class="timetable-wrapper">
             <h2 class="timetable-title">Расписание тренировок</h2>
@@ -146,7 +147,7 @@
                <div class="timetable-grid-item">
                   <p class="timetable-grid-date">22 июня, 10:00</p>
                   <div class="timetable-grid-box">
-                     <img src="img/icons/body.svg" alt="Тренинг" class="timetable-grid-img">
+                     <img src="img/icons/body.svg" alt="Тренинг" class="timetable-grid-img timetable-grid-body">
                      <div class="timetable-grid-titleBox">
                         <h4 class="timetable-grid-title">Функциональный тренинг</h4>
                         <p class="timetable-grid-text">
@@ -158,7 +159,7 @@
                <div class="timetable-grid-item training-day">
                   <p class="timetable-grid-date">23 июня, 10:00</p>
                   <div class="timetable-grid-box">
-                     <img src="img/icons/jump.svg" alt="Скакалка" class="timetable-grid-img">
+                     <img src="img/icons/jump.svg" alt="Скакалка" class="timetable-grid-img timetable-grid-jump">
                      <div class="timetable-grid-titleBox">
                         <h4 class="timetable-grid-title">Силовой микс</h4>
                         <p class="timetable-grid-text training-day-text">
@@ -172,7 +173,7 @@
                <div class="timetable-grid-item">
                   <p class="timetable-grid-date">24 июня, 10:00</p>
                   <div class="timetable-grid-box">
-                     <img src="img/icons/bottle.svg" alt="Бутылка" class="timetable-grid-img">
+                     <img src="img/icons/bottle.svg" alt="Бутылка" class="timetable-grid-img timetable-grid-bottle">
                      <div class="timetable-grid-titleBox">
                         <h4 class="timetable-grid-title">Body sculpt</h4>
                         <p class="timetable-grid-text">
@@ -184,7 +185,7 @@
                <div class="timetable-grid-item">
                   <p class="timetable-grid-date">25 июня, 11:00</p>
                   <div class="timetable-grid-box">
-                     <img src="img/icons/heart.svg" alt="Сердце" class="timetable-grid-img">
+                     <img src="img/icons/heart.svg" alt="Сердце" class="timetable-grid-img timetable-grid-heart">
                      <div class="timetable-grid-titleBox">
                         <h4 class="timetable-grid-title">Дыхательные практики</h4>
                         <p class="timetable-grid-text">
@@ -198,7 +199,7 @@
                <div class="timetable-grid-item">
                   <p class="timetable-grid-date">26 июня, 11:00</p>
                   <div class="timetable-grid-box">
-                     <img src="img/icons/dumbbell.svg" alt="Гантеля" class="timetable-grid-img">
+                     <img src="img/icons/dumbbell.svg" alt="Гантеля" class="timetable-grid-img timetable-grid-dumbbell">
                      <div class="timetable-grid-titleBox">
                         <h4 class="timetable-grid-title">L.A.B.</h4>
                         <p class="timetable-grid-text">
@@ -210,7 +211,7 @@
                <div class="timetable-grid-item">
                   <p class="timetable-grid-date">27 июня, 10:00</p>
                   <div class="timetable-grid-box">
-                     <img src="img/icons/weight.svg" alt="Гиря" class="timetable-grid-img">
+                     <img src="img/icons/weight.svg" alt="Гиря" class="timetable-grid-img timetable-grid-weight">
                      <div class="timetable-grid-titleBox">
                         <h4 class="timetable-grid-title">Комплексная разминка</h4>
                         <p class="timetable-grid-text">
@@ -243,7 +244,7 @@
       </div>
    </section>
 
-   <section class="company">
+   <section class="company" id="menuCompany">
       <div class="container">
          <div class="company-content">
             <!-- <div class="company-wrapper"> -->
@@ -341,9 +342,9 @@
                <a href="#" class="header-logo modal-logo"></a>
                <nav>
                   <ul class="header-nav modal-nav">
-                     <li><a href="#">Мероприятия</a></li>
-                     <li><a href="#">Расписание</a></li>
-                     <li><a href="#">О компании</a></li>
+                     <li><a href="#menuEvents">Мероприятия</a></li>
+                     <li><a href="#menuTimetable">Расписание</a></li>
+                     <li><a href="#menuCompany">О компании</a></li>
                   </ul>
                </nav>
             </div>
