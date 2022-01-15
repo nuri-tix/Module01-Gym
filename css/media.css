@@ -608,6 +608,12 @@
 
 }
 
+@media (max-width: 340px) {
+   h3 {
+      font-size: 14px;
+   }
+}
+
 @media (max-width: 329px) {
    .popup-window-box {
       width: 100%;
