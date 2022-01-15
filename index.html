@@ -91,7 +91,7 @@
                </h3>
                <div class="events-grid-plusBox">
                   <p class="events-grid-text">вебинар</p>
-                  <div class="events-grid-plus"></div>
+                  <div class="events-grid-plus" onclick="openModal('form')"></div>
                </div>
                <button class="events-grid-btn" onclick="openModal('form')">Участвовать</button>
             </div>
@@ -106,7 +106,7 @@
                </h3>
                <div class="events-grid-plusBox">
                   <p class="events-grid-text">вебинар</p>
-                  <div class="events-grid-plus"></div>
+                  <div class="events-grid-plus" onclick="openModal('form')"></div>
                </div>
                <button class="events-grid-btn" onclick="openModal('form')">Участвовать</button>
             </div>
@@ -342,9 +342,9 @@
                <a href="#" class="header-logo modal-logo"></a>
                <nav>
                   <ul class="header-nav modal-nav">
-                     <li><a href="#menuEvents">Мероприятия</a></li>
-                     <li><a href="#menuTimetable">Расписание</a></li>
-                     <li><a href="#menuCompany">О компании</a></li>
+                     <li><a href="#menuEvents" onclick="closeModal()">Мероприятия</a></li>
+                     <li><a href="#menuTimetable" onclick="closeModal()">Расписание</a></li>
+                     <li><a href="#menuCompany" onclick="closeModal()">О компании</a></li>
                   </ul>
                </nav>
             </div>

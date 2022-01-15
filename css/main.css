@@ -63,7 +63,7 @@ header {
    border-bottom: 1px solid transparent;
 }
 
-.header-nav a:hover {
+nav a:hover {
    border-bottom: 1px solid #2B3541;
 }
 
@@ -263,10 +263,14 @@ h3 {
 .events-grid-plusBox {
    display: flex;
    justify-content: flex-end;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
 }
 
 .events-grid-text {
-   position: absolute;
+   position: relative;
    bottom: 0;
    font-size: 18px;
    background: #fbf138;
@@ -323,7 +327,7 @@ h3 {
    background: #2B3541;
    width: 51px;
    height: 51px;
-   position: absolute;
+   position: relative;
    bottom: 0;
    right: 0;
 }
@@ -791,7 +795,7 @@ h4,
 
 
 #popupWindow {
-   width: 600px;
+   max-width: 600px;
    background: #F3F3F3;
    position: absolute;
    z-index: 5;
@@ -944,6 +948,13 @@ h4,
    display: block;
 }
 
+.js-modal-menu #modal {
+   top: 0;
+   left: 50%;
+   transform: translate(-50%);
+   opacity: 1;
+}
+
 #modal {
    width: 100%;
    background: #F3F3F3;
@@ -992,8 +1003,8 @@ h4,
 
 .modal-nav a {
    font-size: 16px;
-   pointer-events: none;
 }
+
 
 .modal-nav li::after {
    content: '';
@@ -1005,9 +1016,12 @@ h4,
    margin-bottom: 24px;
 }
 
+
 .modal-nav li:last-child::after {
    content: none;
 }
+
+
 
 .modal-social {
    gap: 20px;
@@ -1037,12 +1051,4 @@ h4,
    right: 10px;
    cursor: pointer;
    transition: 0.3s;
-}
-
-
-.js-modal-menu #modal {
-   top: 0;
-   left: 50%;
-   transform: translate(-50%);
-   opacity: 1;
 }

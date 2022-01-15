@@ -135,6 +135,17 @@
       justify-content: center;
       gap: 16px;
    }
+
+   .events-grid-plus {
+      pointer-events: auto;
+   }
+
+   .events-grid-item:hover {
+      display: none;
+   }
+
+
+
 }
 
 @media (max-width: 850px) {
@@ -194,6 +205,14 @@
 
    header nav {
       display: none;
+   }
+
+   .header-nav a:hover {
+      border-bottom: transparent;
+   }
+
+   .header-nav a {
+      pointer-events: auto;
    }
 
    .events-grid {
