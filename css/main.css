@@ -13,6 +13,7 @@ body {
 
 
 
+
 /* <header class="header"> */
 
 .container {
@@ -489,6 +490,7 @@ h4,
 .mailing-input {
    padding: 19px;
    border: none;
+   font-size: 18px;
 }
 
 .mailing-input:focus {
@@ -864,6 +866,7 @@ h4,
    padding: 24px 25px;
    margin-bottom: 19px;
    border: none;
+   font-size: 18px;
 }
 
 .input-placeholder::-webkit-input-placeholder {
