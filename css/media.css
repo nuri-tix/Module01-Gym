@@ -140,7 +140,9 @@
       pointer-events: auto;
    }
 
-   * {
+   .events-grid-item,
+   .burger,
+   .company-wrapper-btnbox {
       -webkit-tap-highlight-color: transparent;
    }
 
