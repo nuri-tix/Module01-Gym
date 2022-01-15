@@ -140,9 +140,9 @@
       pointer-events: auto;
    }
 
-   .events-grid-item:hover {
+   /* .events-grid-item:hover {
       display: none;
-   }
+   } */
 
 
 
