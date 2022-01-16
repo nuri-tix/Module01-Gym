@@ -426,16 +426,16 @@ h4,
 
 .timetable-grid-text {
    line-height: 150%;
-   /* overflow: hidden; */
-   /* max-height: 0; */
+   overflow: hidden;
+   max-height: 0;
    transition: max-height 1s;
    opacity: 1;
-   max-height: 500px;
+   /* max-height: 500px; */
    /* margin-top: 30px; */
 }
 
 .timetable-grid-item:hover .timetable-grid-text {
-   /* max-height: 500px; */
+   max-height: 500px;
    transform: translateY(-10px);
    opacity: 1;
    /* margin-bottom: 40px; */
