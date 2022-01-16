@@ -466,14 +466,15 @@
       gap: 20px;
    }
 
+
    .timetable-grid-itemCenter,
    .timetable-grid-itemRight {
-      grid-template: 114px 114px/ 1fr;
+      grid-template: 130px 130px/ 1fr;
       /* grid-template: minmax(114px, auto) minmax(114px, auto) / 1fr; */
    }
 
    .timetable-grid-itemLeft {
-      grid-template: 114px 206px / 1fr;
+      grid-template: 130px 206px / 1fr;
    }
 
    .timetable-grid-body {
@@ -499,6 +500,7 @@
    .timetable-grid-dumbbell {
       width: 46px;
       height: 25px;
+      margin-bottom: 44px;
    }
 
    .timetable-grid-weight {
@@ -512,7 +514,7 @@
 
    .timetable-grid-box {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 17px;
    }
 
@@ -525,7 +527,7 @@
    }
 
    .timetable-grid-img {
-      margin-bottom: 15px;
+      /* margin-bottom: 15px; */
    }
 
    .timetable-grid-text {
@@ -624,6 +626,12 @@
       gap: 85px;
    }
 
+}
+
+@media (max-width: 372px) {
+   .timetable-grid-item:hover .timetable-grid-text {
+      transform: translateY(-10px);
+   }
 }
 
 @media (max-width: 360px) {
