@@ -125,7 +125,6 @@ nav a:hover {
    width: 676px;
    margin: 0;
    padding-top: 226px;
-   padding-right: 50px;
    letter-spacing: 0.03em;
    line-height: 125%;
    position: relative;
@@ -238,6 +237,7 @@ h2 {
    width: 100%;
    height: 600px;
    opacity: .8;
+   background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
 }
 
 h3 {
@@ -375,19 +375,22 @@ h3 {
 
 .timetable-grid-itemLeft {
    display: grid;
-   grid-template: minmax(250px, auto) minmax(433px, auto) / 1fr;
+   grid-template: 270px 413px / 1fr;
+   /* grid-template: minmax(250px, auto) minmax(433px, auto) / 1fr; */
    gap: 20px;
 }
 
 .timetable-grid-itemCenter {
    display: grid;
-   grid-template: minmax(402px, auto) minmax(281px, auto) / 1fr;
+   grid-template: 402px 281px / 1fr;
+   /* grid-template: minmax(402px, auto) minmax(281px, auto) / 1fr; */
    gap: 20px;
 }
 
 .timetable-grid-itemRight {
    display: grid;
-   grid-template: minmax(309px, auto) minmax(374px, auto) / 1fr;
+   grid-template: 309px 374px / 1fr;
+   /* grid-template: minmax(309px, auto) minmax(374px, auto) / 1fr; */
    gap: 20px;
 }
 
@@ -397,6 +400,7 @@ h3 {
    flex-direction: column;
    justify-content: space-between;
    padding: 20px 30px;
+   overflow: hidden;
 }
 
 h4,
@@ -416,20 +420,31 @@ h4,
    margin-bottom: 34px;
 }
 
+.timetable-grid-title {
+   margin-bottom: 20px;
+}
 
 .timetable-grid-text {
    line-height: 150%;
-   overflow: hidden;
-   max-height: 0;
-   transition: all 1s;
+   /* overflow: hidden; */
+   /* max-height: 0; */
+   transition: max-height 1s;
    opacity: 1;
+   max-height: 500px;
+   /* margin-top: 30px; */
 }
 
 .timetable-grid-item:hover .timetable-grid-text {
-   max-height: 500px;
+   /* max-height: 500px; */
+   transform: translateY(-10px);
    opacity: 1;
-   margin-top: 30px;
+   /* margin-bottom: 40px; */
 }
+
+/* .timetable-grid-item:hover .timetable-grid-img {
+   pointer-events: none;
+} */
+
 
 .timetable-grid-item:hover {
    background: rgba(243, 243, 243, .5);
@@ -740,7 +755,7 @@ h4,
 
 /* кнопка наверх */
 
-.button-up {
+/* .button-up {
    background: url(../img/icons/arrowUp.svg) no-repeat center / cover;
    width: 32px;
    height: 35px;
@@ -760,7 +775,7 @@ h4,
 
 .button-up.visible {
    opacity: 0.5;
-}
+} */
 
 
 /* <div class="popup-form"> - Форма на участие */
@@ -920,7 +935,10 @@ h4,
 
 /* Модальное окно <button class="burger" onclick="openModal()">*/
 
-
+.header-burger {
+   width: 29px;
+   height: 22px;
+}
 
 .burger {
    background: url(../img/icons/burgermenu.svg) no-repeat center /contain;
