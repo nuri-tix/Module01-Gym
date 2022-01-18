@@ -26,18 +26,18 @@
       position: relative;
       right: 0;
       max-width: none;
-      height: 83.3vw;
+      height: 80.8vw;
+      overflow: hidden;
    }
 
    .banner-img-big,
    .banner-img-small {
-      height: 98%;
+      height: 100%;
    }
 
    .banner-img {
       width: 100%;
       right: 0;
-      max-height: 100%;
    }
 
    .banner-title {
@@ -75,9 +75,7 @@
       height: 100%;
    }
 
-   /* .events-grid-itemBig .events-grid-cover {
-      height: 99vw;
-   } */
+
    .events-grid-itemBig .events-grid-cover,
    .events-grid-itemBig .events-grid-cover img {
       height: 100vw;
@@ -134,9 +132,6 @@
       width: 45%;
    }
 
-   /* .company-wrapper-img {
-      max-height: 99%;
-   } */
 
    .footer {
       padding: 40px;
@@ -453,7 +448,6 @@
 
    .popup-window-title,
    .popup-window-text {
-      /* font-size: 4vw; */
       font-size: 18px;
    }
 
@@ -481,9 +475,6 @@
 }
 
 @media (max-width: 640px) {
-   .banner-img-wrapper {
-      height: 83vw;
-   }
 
    .popup-window-wrapper {
       padding: 56px 15px 40px;
@@ -560,13 +551,9 @@
       align-items: flex-start;
    }
 
-   .timetable-grid-date {
-      /* margin-bottom: 20px; */
-   }
 
-   .timetable-grid-img {
-      /* margin-bottom: 15px; */
-   }
+
+
 
    .timetable-grid-text {
       font-size: 12px;
@@ -592,14 +579,6 @@
 
 
 
-   .training-day {
-      /* margin-bottom: 55px; */
-   }
-
-   /* .training-day .timetable-grid-date {
-      margin-bottom: 55px;
-   } */
-
    .timetable-title {
       width: 50%;
    }
@@ -610,7 +589,6 @@
 
    .timetable-grid-date {
       font-size: 16px;
-      /* margin-bottom: 16px; */
    }
 
    .mailing {
@@ -640,11 +618,6 @@
 
 }
 
-@media (max-width: 440px) {
-   .banner-img-wrapper {
-      height: 82.3vw;
-   }
-}
 
 @media (max-width: 400px) {
    .container {
@@ -660,7 +633,7 @@
    }
 
    .banner-img-wrapper {
-      height: 84.3vw;
+      height: 82.8vw;
    }
 
    .events-title {
@@ -691,6 +664,7 @@
    }
 
 }
+
 
 @media (max-width: 372px) {
    .timetable-grid-item:hover .timetable-grid-text {
