@@ -80,7 +80,16 @@
    }
 
    .events-grid-itemBig img {
-      height: 100%;
+      display: none;
+   }
+
+   .events-grid-itemBig .events-grid-cover {
+      background: url(../img/vebinar2Mobile.png) no-repeat center center / cover;
+      opacity: .8;
+   }
+
+   .events-grid-grad {
+      background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
    }
 
    .events-grid-itemBig .events-grid-title {
@@ -300,6 +309,7 @@
 
    .banner-training {
       font-size: 26px;
+      margin-bottom: 15px;
    }
 
    .banner-text {
@@ -631,6 +641,10 @@
 }
 
 @media (max-width: 400px) {
+   .container {
+      padding: 0 10px;
+   }
+
    .timetable-grid-item {
       gap: 15px;
    }
