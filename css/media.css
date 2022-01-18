@@ -22,9 +22,22 @@
       flex-direction: column;
    }
 
-   .banner-img img {
+   .banner-img-wrapper {
       position: relative;
       right: 0;
+      max-width: none;
+      height: 83.3vw;
+   }
+
+   .banner-img-big,
+   .banner-img-small {
+      height: 98%;
+   }
+
+   .banner-img {
+      width: 100%;
+      right: 0;
+      max-height: 100%;
    }
 
    .banner-title {
@@ -33,6 +46,7 @@
 
    .banner-arrow {
       margin-top: 80px;
+      margin-bottom: 30px;
    }
 
    .footer-nav {
@@ -451,6 +465,10 @@
 }
 
 @media (max-width: 640px) {
+   .banner-img-wrapper {
+      height: 83vw;
+   }
+
    .popup-window-wrapper {
       padding: 56px 15px 40px;
    }
@@ -460,6 +478,10 @@
 @media (max-width: 540px) {
    .banner-btn {
       display: block;
+   }
+
+   .banner-img-wrapper {
+      gap: 10px;
    }
 
    .timetable-grid-item {
@@ -602,6 +624,12 @@
 
 }
 
+@media (max-width: 440px) {
+   .banner-img-wrapper {
+      height: 82.3vw;
+   }
+}
+
 @media (max-width: 400px) {
    .timetable-grid-item {
       gap: 15px;
@@ -623,7 +651,7 @@
    }
 
    .footer-flex {
-      gap: 85px;
+      gap: 103px;
    }
 
 }
@@ -684,6 +712,11 @@
       height: 27px;
    }
 
+   .footer-mail::before {
+      top: -17px;
+      left: -6px;
+   }
+
 }
 
 @media (max-width: 359px) {
@@ -695,6 +728,10 @@
 }
 
 @media (max-width: 340px) {
+   .mailing-form {
+      font-size: 10px;
+   }
+
    h3 {
       font-size: 14px;
    }
