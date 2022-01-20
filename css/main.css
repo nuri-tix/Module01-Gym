@@ -728,6 +728,8 @@ h4,
    z-index: 1;
    font-weight: 700;
    font-size: 16px;
+   text-decoration: none;
+   color: #2B3541;
    /* margin-left: 153px; */
 }
 
