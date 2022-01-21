@@ -119,13 +119,15 @@ nav a:hover {
 
 .banner-img-big {
    background: linear-gradient(90deg, rgba(251, 241, 56, .2) 0%, rgba(253, 249, 182, 0.45) 145.23%);
-   flex-basis: 70%;
+   /* flex-basis: 70%; */
+   width: 535px;
    height: 850px;
 }
 
 .banner-img-small {
    background: linear-gradient(90deg, rgba(253, 249, 182, .2) 0%, rgba(253, 249, 182, 0.7) 166.81%);
-   flex-basis: 30%;
+   /* flex-basis: 30%; */
+   width: 235px;
    height: 850px;
 }
 
