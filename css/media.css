@@ -14,7 +14,11 @@
 
 }
 
-@media (max-width: 1042px) {}
+@media (max-width: 1037px) {
+   .banner-title {
+      font-size: 4.5vw;
+   }
+}
 
 @media (max-width: 1000px) {
    .banner-img-big {
@@ -32,9 +36,7 @@
    }
 
 
-   .banner-title {
-      /* padding-top: 60px; */
-   }
+
 
    .banner-arrow {
       /* margin-top: 80px;
@@ -47,44 +49,8 @@
 }
 
 @media (max-width: 940px) {
-   .banner-container {
-      display: flex;
-      flex-direction: column;
-   }
-
-   .banner-img-wrapper {
-      position: relative;
-      right: 0;
-      max-width: none;
-      height: 80.8vw;
-      overflow: hidden;
-   }
-
-   .banner-img-big,
-   .banner-img-small {
-      /* height: 100%; */
-   }
-
-   .banner-img-big {
-      width: 70%;
-   }
-
-   .banner-img-small {
-      width: 30%;
-   }
-
    .banner-img {
-      width: 100%;
-      right: 0;
-   }
-
-   .banner-title {
-      padding-top: 60px;
-   }
-
-   .banner-arrow {
-      margin-top: 80px;
-      margin-bottom: 30px;
+      width: 99.6vw;
    }
 
    .events {
@@ -109,7 +75,7 @@
 
    .events-grid-itemBig .events-grid-cover,
    .events-grid-itemBig .events-grid-cover img {
-      height: 100vw;
+      /* height: 100vw; */
    }
 
    .events-grid-itemBig img {
@@ -127,6 +93,10 @@
 
    .events-grid-itemBig .events-grid-title {
       width: 260px;
+   }
+
+   .events-grid-title:nth-child(2) {
+      width: 300px;
    }
 
    .events-grid-btn {
@@ -205,6 +175,8 @@
    }
 
    @media (max-width: 920px) {
+
+
       .timetable-grid {
          grid-template-columns: repeat(2, 1fr)
       }
@@ -228,7 +200,46 @@
 }
 
 @media (max-width: 850px) {
+   .banner-container {
+      display: flex;
+      flex-direction: column;
+   }
 
+   .banner-img-wrapper {
+      position: relative;
+      right: 0;
+      max-width: none;
+      height: 80.8vw;
+      overflow: hidden;
+   }
+
+   .banner-img-big,
+   .banner-img-small {
+      /* height: 100%; */
+   }
+
+   .banner-img-big {
+      width: 70%;
+   }
+
+   .banner-img-small {
+      width: 30%;
+   }
+
+   .banner-img {
+      width: 100%;
+      right: 0;
+   }
+
+   .banner-title {
+      padding-top: 60px;
+      font-size: 48px;
+   }
+
+   .banner-arrow {
+      margin-top: 80px;
+      margin-bottom: 30px;
+   }
 
    header .header-nav a {
       font-size: 16px;
@@ -239,7 +250,9 @@
       width: 134px;
    }
 
-
+   .events-grid-titleTwo {
+      width: 144px;
+   }
 
    .company-content {
       grid-template-areas: 'a a'
