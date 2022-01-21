@@ -259,7 +259,6 @@ h2 {
    object-fit: cover;
    width: 100%;
    height: 100%;
-   /* height: 600px; */
    opacity: .8;
    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
 }
@@ -371,9 +370,6 @@ h3 {
 
 /* <section class="timetable"> - сетка grid */
 
-.timetable {}
-
-.container {}
 
 .timetable-wrapper {
    display: flex;
@@ -424,7 +420,6 @@ h3 {
    flex-direction: column;
    justify-content: space-between;
    padding: 20px 30px;
-   /* overflow: hidden; */
 }
 
 h4,
@@ -444,15 +439,11 @@ h4,
    margin-bottom: 34px;
 }
 
-.timetable-grid-title {
-   /* margin-bottom: 20px; */
-}
 
 .timetable-grid-text {
    line-height: 150%;
    overflow: hidden;
    max-height: 0;
-   /* transition: max-height 1s; */
    transition: 0.3s;
    opacity: 0;
 }
@@ -844,8 +835,6 @@ h4,
    width: 20px;
    height: 20px;
    border: none;
-   /* color: #010101; - можно сделать с помощью буквы 'X'
-   font-size: 20px; */
    position: absolute;
    top: 30px;
    right: 30px;
@@ -941,7 +930,6 @@ h4,
 }
 
 .popup-input:focus {
-   /* background: #F3F3F3; */
    outline: none;
 }
 
