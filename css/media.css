@@ -116,6 +116,10 @@
       justify-content: space-between;
    }
 
+   .events-grid-cover {
+      background-position: center top;
+   }
+
    .company {
       margin-bottom: 80px;
    }
@@ -382,12 +386,15 @@
       font-size: 16px;
    }
 
+   .events-grid-cover {
+      /* height: 75vw; */
+      height: 415px;
+   }
 
-
-   .events-grid-cover,
+   /* .events-grid-cover,
    .events-grid-cover img {
       height: 75vw;
-   }
+   } */
 
 
    .events-grid-itemBig .events-grid-title {
@@ -541,6 +548,14 @@
       gap: 20px;
    }
 
+   .vents-grid-itemBig .events-grid-cover {
+      height: 336px;
+   }
+
+   .events-grid-cover {
+      /* height: 75vw; */
+      height: 310px;
+   }
 
    .timetable-grid-itemCenter,
    .timetable-grid-itemRight {
