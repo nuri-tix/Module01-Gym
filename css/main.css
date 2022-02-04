@@ -446,12 +446,13 @@ h4,
    max-height: 0;
    transition: 0.3s;
    opacity: 0;
+   margin-top: 20px;
 }
 
 .timetable-grid-item:hover .timetable-grid-text {
    max-height: 500px;
    opacity: 1;
-   margin-top: 20px;
+   /* margin-top: 20px; */
 }
 
 
